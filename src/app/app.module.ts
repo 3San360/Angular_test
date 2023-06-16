@@ -6,16 +6,27 @@ import { AppComponent } from './app.component';
 // import { NgxSpinnerModule } from 'ngx-spinner';
 import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from './_shared/shared.module';
+// import { MaterialModule } from './material.module';
+// import { MaterialModule } from './material.module';
+// import { TableComponent } from './_shared/table/table.component';
+// import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    // TableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     NgxSpinnerModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    SharedModule,
+    // MatTableModule
+    // MaterialModule
   ],
   // exports:[NgxSpinnerModule],
   providers: [],
